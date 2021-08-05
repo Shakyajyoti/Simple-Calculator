@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pic"
+    tools:context=".MainActivity1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Confirmation Page"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:hint="First number"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/get_num1"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/txtv_sign"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:hint="Second number"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@color/white"
+        android:id="@+id/get_num2"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:text="SUBMIT"
+        android:textSize="25dp"
+        android:backgroundTint="#F30808"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/btn_sub"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="220dp"
+        android:textColor="@color/black"
+        android:text="Created by Shakyajyoti_Pyne"
+        android:gravity="center"
+        />
+</LinearLayout>

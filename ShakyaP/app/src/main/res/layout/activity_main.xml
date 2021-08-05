@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="CALCULATOR"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        android:hint="Enter number 1"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/edt_num1"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:hint="Enter number 2"
+        android:layout_gravity="center"
+        android:id="@+id/edt_num2"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="+"
+            android:textSize="30dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:id="@+id/B1"
+            />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="-"
+            android:textSize="30dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:id="@+id/B2"
+            android:layout_toRightOf="@+id/B1"
+            />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="*"
+            android:textSize="30dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:id="@+id/B3"
+            android:layout_toRightOf="@+id/B2"
+            />
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="/"
+            android:textSize="30dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:id="@+id/B4"
+            android:layout_toRightOf="@+id/B3"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FDF4F1"
+        android:text="------------------------------------------------------------------------------------------------------------------"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Result of your Calculation : "
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:hint="Num1"
+        android:id="@+id/get_num1"
+        android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/txtv_sign"
+            android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/get_num2"
+            android:hint="Num2"
+            android:background="@color/white"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="is"
+        android:layout_marginLeft="160dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="10dp"
+        android:hint="Result"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:gravity="center"
+        android:id="@+id/result"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="31dp"
+        android:textColor="@color/black"
+        android:text="Created by Shakyajyoti_Pyne"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
